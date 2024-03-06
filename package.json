@@ -1,0 +1,31 @@
+{
+  "name": "devcontainers_template",
+  "version": "1.0.0",
+  "description": "my devcontainer",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=3000 node --watch src/index.js",
+    "test": "npx vitest run",
+    "test:watch": "npx vitest",
+    "test:debug": "npx vitest --inspectBrk --poolOptions.threads.singleThread",
+    "fmt": "npx @biomejs/biome format <files|src> --write",
+    "lint": "npx @biomejs/biome lint <files|src>",
+    "lint:safefix": "npx @biomejs/biome lint <files|src> --apply",
+    "lint:fmt:safefix": "npx @biomejs/biome check <files|src> --apply",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "elvitin",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": "v20.11.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "husky": "^9.0.11"
+  },
+  "dependencies": {
+    "undici": "^6.7.0"
+  }
+}

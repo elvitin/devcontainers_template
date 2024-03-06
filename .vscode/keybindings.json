@@ -1,0 +1,7 @@
+[
+  {
+    "key": "alt+a",
+    "command": "workbench.action.remote.close",
+    "when": "editorTextFocus"
+  }
+]
